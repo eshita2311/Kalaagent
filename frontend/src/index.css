@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ai-chip {
+  background-color: rgba(67, 85, 185, 0.1);
+  color: #4355b9;
+}
+
+.artisan-card {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+  background-color: #ffffff;
+}

@@ -1,0 +1,283 @@
+import { Product } from "../types";
+
+/**
+ * Researched reference data spanning 7 major Indian handicraft categories.
+ * GI-tag status reflects publicly known GI registrations. Prices are
+ * realistic market ranges for handmade pieces of this type/size.
+ *
+ * IMPORTANT: Before final submission, spot-check GI status and price ranges
+ * yourself (e.g. via the GI Registry India site or Okhai/Gaatha listings).
+ *
+ * Workshop/collective names are generic cooperative-style names, not real
+ * individuals, since individual artisan identity can't be verified/licensed
+ * for a demo product.
+ *
+ * image_url uses Wikimedia Commons' Special:FilePath endpoint (the official
+ * stable hotlink pattern) — every file here was confirmed to exist via
+ * Wikimedia Commons category listings before being added. All are freely
+ * licensed (CC-BY-SA, CC0, or GFDL).
+ */
+export const catalogSeed: Product[] = [
+  // ---------- Painting ----------
+  {
+    id: "prod_001",
+    name: "Tree of Life Madhubani Painting",
+    art_form: "Madhubani Painting",
+    craft_category: "Painting",
+    region: "Bihar",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Mithila Art Collective",
+    material: "Natural pigments on handmade paper",
+    price: 2450,
+    trust_score: 92,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Colorful_Madhubani_painting.jpg",
+  },
+  {
+    id: "prod_002",
+    name: "Krishna Raas Leela Madhubani Painting",
+    art_form: "Madhubani Painting",
+    craft_category: "Painting",
+    region: "Bihar",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Mithila Art Collective",
+    material: "Natural pigments on handmade paper",
+    price: 3200,
+    trust_score: 90,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mithila-Madhubani_Painting.jpg",
+  },
+  {
+    id: "prod_009",
+    name: "Jagannath Pattachitra Painting",
+    art_form: "Pattachitra Painting",
+    craft_category: "Painting",
+    region: "Odisha",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Raghurajpur Pattachitra Artists Cooperative",
+    material: "Natural colors on treated cloth canvas",
+    price: 2100,
+    trust_score: 94,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Raghurajpur_Pattachitra,ODISHA.JPG",
+  },
+  {
+    id: "prod_010",
+    name: "Dashavatar Pattachitra Scroll",
+    art_form: "Pattachitra Painting",
+    craft_category: "Painting",
+    region: "Odisha",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Raghurajpur Pattachitra Artists Cooperative",
+    material: "Natural colors on treated cloth canvas",
+    price: 5200,
+    trust_score: 96,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Tree-of-life-pattachitra-painting.jpg",
+  },
+
+  // ---------- Pottery and Clay Craft ----------
+  {
+    id: "prod_005",
+    name: "Blue Pottery Decorative Vase",
+    art_form: "Jaipur Blue Pottery",
+    craft_category: "Pottery and Clay Craft",
+    region: "Rajasthan",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Jaipur Blue Pottery Artisans Trust",
+    material: "Quartz frit ceramic, hand-painted glaze",
+    price: 1450,
+    trust_score: 89,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Blue_Pottery_Designer_Vase.jpg",
+  },
+  {
+    id: "prod_006",
+    name: "Blue Pottery Tea Set (6-piece)",
+    art_form: "Jaipur Blue Pottery",
+    craft_category: "Pottery and Clay Craft",
+    region: "Rajasthan",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Jaipur Blue Pottery Artisans Trust",
+    material: "Quartz frit ceramic, hand-painted glaze",
+    price: 2900,
+    trust_score: 91,
+    image_url:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Jaipur_Blue_Pottery_Vase_with_Raja-Rani_Design.jpg",
+  },
+  {
+    id: "prod_011",
+    name: "Assam Terracotta Decorative Figurine",
+    art_form: "Asharikandi Terracotta",
+    craft_category: "Pottery and Clay Craft",
+    region: "Assam",
+    gi_tag_status: "Not GI-Registered",
+    workshop_name: "Asharikandi Terracotta Artisans Society",
+    material: "Hand-molded fired terracotta clay",
+    price: 950,
+    trust_score: 85,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Terracotta_from_Asharikandi_Village_Assam.jpg",
+  },
+
+  // ---------- Textile and Fiber Craft ----------
+  {
+    id: "prod_003",
+    name: "Ikat Silk Saree",
+    art_form: "Pochampally Ikat",
+    craft_category: "Textile and Fiber Craft",
+    region: "Telangana",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Pochampally Weavers Cooperative Society",
+    material: "Handwoven silk, natural dye Ikat",
+    price: 8500,
+    trust_score: 95,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pochampalli_Ikat_saree.jpg",
+  },
+  {
+    id: "prod_004",
+    name: "Ikat Cotton Dupatta",
+    art_form: "Pochampally Ikat",
+    craft_category: "Textile and Fiber Craft",
+    region: "Telangana",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Pochampally Weavers Cooperative Society",
+    material: "Handwoven cotton, Ikat dye technique",
+    price: 1800,
+    trust_score: 88,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pochampalli_Ikat_saree.jpg",
+  },
+  {
+    id: "prod_012",
+    name: "Phulkari Embroidered Dupatta",
+    art_form: "Phulkari Embroidery",
+    craft_category: "Textile and Fiber Craft",
+    region: "Punjab",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Punjab Phulkari Women's Collective",
+    material: "Hand-spun khadi cotton, silk thread embroidery",
+    price: 3100,
+    trust_score: 90,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_threads_used_for_embroidering_Phulkari.jpg",
+  },
+  {
+    id: "prod_013",
+    name: "Bagh Hand Block Print Fabric",
+    art_form: "Bagh Print",
+    craft_category: "Textile and Fiber Craft",
+    region: "Madhya Pradesh",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Bagh Print Artisans Cooperative",
+    material: "Hand block-printed cotton, natural dyes",
+    price: 1650,
+    trust_score: 87,
+    image_url:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Traditional_Bagh_hand_block_print_master_craftsman-artisan-artist_Mohammed_Bilal_Khatri,_Madhya_Pradesh,_India.jpg",
+  },
+
+  // ---------- Basketry and Cane Craft ----------
+  {
+    id: "prod_014",
+    name: "Handwoven Cane Storage Basket",
+    art_form: "Cane Basketry",
+    craft_category: "Basketry and Cane Craft",
+    region: "West Bengal",
+    gi_tag_status: "Not GI-Registered",
+    workshop_name: "Bengal Cane Weavers Cooperative",
+    material: "Natural cane, hand-woven",
+    price: 850,
+    trust_score: 82,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cane_Basket_Weaving_-_Kolkata_2011-12-08_7432.JPG",
+  },
+  {
+    id: "prod_015",
+    name: "Bamboo Wall Hanging Decor",
+    art_form: "Bamboo Craft",
+    craft_category: "Basketry and Cane Craft",
+    region: "Maharashtra",
+    gi_tag_status: "Not GI-Registered",
+    workshop_name: "Maharashtra Bamboo Artisans Guild",
+    material: "Natural bamboo, hand-assembled",
+    price: 1200,
+    trust_score: 83,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bamboo_Wall_Hanging,_Maharashtra.jpg",
+  },
+
+  // ---------- Wood and Stone Craft ----------
+  {
+    id: "prod_016",
+    name: "Channapatna Wooden Toy Set",
+    art_form: "Channapatna Toys",
+    craft_category: "Wood and Stone Craft",
+    region: "Karnataka",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Channapatna Toy Makers Guild",
+    material: "Wrightia tinctoria wood, natural lacquer",
+    price: 1100,
+    trust_score: 93,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Channapatna-toys.jpg",
+  },
+  {
+    id: "prod_017",
+    name: "Marble Inlay Coaster Set (Parchinkari)",
+    art_form: "Agra Marble Inlay",
+    craft_category: "Wood and Stone Craft",
+    region: "Uttar Pradesh",
+    gi_tag_status: "Not GI-Registered",
+    workshop_name: "Agra Parchinkari Artisans Trust",
+    material: "White marble, semi-precious stone inlay",
+    price: 2400,
+    trust_score: 88,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Parchinkari_white_marble_coaster_set_from_Agra_India.jpg",
+  },
+
+  // ---------- Metal Craft ----------
+  {
+    id: "prod_007",
+    name: "Dhokra Tribal Horse Figurine",
+    art_form: "Dhokra Metal Craft",
+    craft_category: "Metal Craft",
+    region: "Chhattisgarh",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Bastar Dhokra Karigar Sangh",
+    material: "Bell metal, lost-wax casting",
+    price: 1650,
+    trust_score: 93,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Dokra_from_tribes_of_Bastar_DSCN1172_03.jpg",
+  },
+  {
+    id: "prod_008",
+    name: "Dhokra Tribal Musician Set",
+    art_form: "Dhokra Metal Craft",
+    craft_category: "Metal Craft",
+    region: "Chhattisgarh",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Bastar Dhokra Karigar Sangh",
+    material: "Bell metal, lost-wax casting",
+    price: 3400,
+    trust_score: 90,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Dhokra_figurine_made_by_a_Dharua_tribe.jpg",
+  },
+  {
+    id: "prod_018",
+    name: "Bidriware Silver-Inlay Tray",
+    art_form: "Bidriware",
+    craft_category: "Metal Craft",
+    region: "Karnataka",
+    gi_tag_status: "GI-Registered",
+    workshop_name: "Bidar Bidriware Artisans Association",
+    material: "Zinc-copper alloy, silver inlay",
+    price: 4200,
+    trust_score: 94,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bidri-ware_tray_inlaid_with_silver_-_IMJ_84.70.132.jpg",
+  },
+
+  // ---------- Paper Craft ----------
+  {
+    id: "prod_019",
+    name: "Handmade Paper Flower Decor Set",
+    art_form: "Handmade Paper Craft",
+    craft_category: "Paper Craft",
+    region: "Various (Pan-India)",
+    gi_tag_status: "Not GI-Registered",
+    workshop_name: "Artisan Paper Craft Collective",
+    material: "Handmade paper, natural dyes",
+    price: 450,
+    trust_score: 75,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Eight_petals_flower.jpg",
+  },
+];
